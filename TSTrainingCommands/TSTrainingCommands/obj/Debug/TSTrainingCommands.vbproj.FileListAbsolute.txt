@@ -1,0 +1,30 @@
+E:\Internal Trainings\Custom Command_Feb-2025\TSTrainingCommands\TSTrainingCommands\obj\Debug\TSTrainingCommands.vbproj.AssemblyReference.cache
+E:\Internal Trainings\Custom Command_Feb-2025\TSTrainingCommands\TSTrainingCommands\obj\Debug\TSTrainingCommands.Resources.resources
+E:\Internal Trainings\Custom Command_Feb-2025\TSTrainingCommands\TSTrainingCommands\obj\Debug\TSTrainingCommands.vbproj.GenerateResource.cache
+E:\Internal Trainings\Custom Command_Feb-2025\TSTrainingCommands\TSTrainingCommands\obj\Debug\TSTrainingCommands.vbproj.CoreCompileInputs.cache
+E:\Internal Trainings\Custom Command_Feb-2025\TSTrainingCommands\TSTrainingCommands\obj\Debug\TSTrainingCommands.dll
+E:\Internal Trainings\Custom Command_Feb-2025\TSTrainingCommands\TSTrainingCommands\obj\Debug\TSTrainingCommands.xml
+E:\Internal Trainings\Custom Command_Feb-2025\TSTrainingCommands\TSTrainingCommands\obj\Debug\TSTrainingCommands.pdb
+C:\Program Files (x86)\Smart3D\3DRefData\SharedContent\CustomCommands\TSTrainingCommands.dll
+C:\Program Files (x86)\Smart3D\3DRefData\SharedContent\CustomCommands\TSTrainingCommands.pdb
+C:\Program Files (x86)\Smart3D\3DRefData\SharedContent\CustomCommands\TSTrainingCommands.xml
+C:\Users\s3d\Desktop\Custom Command_Feb-2025\TSTrainingCommands\TSTrainingCommands\bin\Debug\TSTrainingCommands.dll
+C:\Users\s3d\Desktop\Custom Command_Feb-2025\TSTrainingCommands\TSTrainingCommands\bin\Debug\TSTrainingCommands.pdb
+C:\Users\s3d\Desktop\Custom Command_Feb-2025\TSTrainingCommands\TSTrainingCommands\bin\Debug\TSTrainingCommands.xml
+C:\Users\s3d\Desktop\Custom Command_Feb-2025\TSTrainingCommands\TSTrainingCommands\obj\Debug\TSTrainingCommands.Resources.resources
+C:\Users\s3d\Desktop\Custom Command_Feb-2025\TSTrainingCommands\TSTrainingCommands\obj\Debug\TSTrainingCommands.vbproj.GenerateResource.cache
+C:\Users\s3d\Desktop\Custom Command_Feb-2025\TSTrainingCommands\TSTrainingCommands\obj\Debug\TSTrainingCommands.vbproj.CoreCompileInputs.cache
+C:\Users\s3d\Desktop\Custom Command_Feb-2025\TSTrainingCommands\TSTrainingCommands\obj\Debug\TSTrainingCommands.dll
+C:\Users\s3d\Desktop\Custom Command_Feb-2025\TSTrainingCommands\TSTrainingCommands\obj\Debug\TSTrainingCommands.xml
+C:\Users\s3d\Desktop\Custom Command_Feb-2025\TSTrainingCommands\TSTrainingCommands\obj\Debug\TSTrainingCommands.pdb
+C:\Users\s3d\Desktop\Custom Command_Feb-2025\TSTrainingCommands\TSTrainingCommands\obj\Debug\TSTrainingCommands.vbproj.AssemblyReference.cache
+C:\Users\s3d\Desktop\TSTrainingCommands\TSTrainingCommands\bin\Debug\TSTrainingCommands.dll
+C:\Users\s3d\Desktop\TSTrainingCommands\TSTrainingCommands\bin\Debug\TSTrainingCommands.pdb
+C:\Users\s3d\Desktop\TSTrainingCommands\TSTrainingCommands\bin\Debug\TSTrainingCommands.xml
+C:\Users\s3d\Desktop\TSTrainingCommands\TSTrainingCommands\obj\Debug\TSTrainingCommands.vbproj.AssemblyReference.cache
+C:\Users\s3d\Desktop\TSTrainingCommands\TSTrainingCommands\obj\Debug\TSTrainingCommands.Resources.resources
+C:\Users\s3d\Desktop\TSTrainingCommands\TSTrainingCommands\obj\Debug\TSTrainingCommands.vbproj.GenerateResource.cache
+C:\Users\s3d\Desktop\TSTrainingCommands\TSTrainingCommands\obj\Debug\TSTrainingCommands.vbproj.CoreCompileInputs.cache
+C:\Users\s3d\Desktop\TSTrainingCommands\TSTrainingCommands\obj\Debug\TSTrainingCommands.dll
+C:\Users\s3d\Desktop\TSTrainingCommands\TSTrainingCommands\obj\Debug\TSTrainingCommands.xml
+C:\Users\s3d\Desktop\TSTrainingCommands\TSTrainingCommands\obj\Debug\TSTrainingCommands.pdb
