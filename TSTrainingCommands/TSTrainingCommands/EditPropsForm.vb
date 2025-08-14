@@ -18,6 +18,7 @@ Public Class EditPropsForm
     Private txtRmnm As TextBox
     Private txtEDes As TextBox
     Private txtSeId As TextBox
+    Private txtTag As TextBox
 
     ' This code creates the form and gathers data/input from the user
     Public Sub New(obj As BusinessObject)
@@ -50,7 +51,8 @@ Public Class EditPropsForm
             ("IURoomNo", "RoomNo"),
             ("IJEquipment", "Description"),
             ("IJPipelineSystem", "SequenceNumber"),
-            ("IJSequence", "Id")
+            ("IJSequence", "Id"),
+            ("IJRtePipePathFeat", "Tag")
              }.Any(Function(p) PropertyExists(obj, p.Item1, p.Item2)) Then
             Dim btnApply As New Button With {.Text = "Apply", .Top = currentTop, .Left = 120}
             AddHandler btnApply.Click, AddressOf ApplyChanges
@@ -153,6 +155,16 @@ Public Class EditPropsForm
             currentTop += spacing
         End If
 
+        ' Tag
+        If PropertyExists(obj, "IJRtePipePathFeat", "Tag") Then
+            Dim lbl8 As New Label With {.Text = "Tag:", .Top = currentTop, .Left = 0}
+            txtSeId = New TextBox With {.Top = currentTop, .Left = 100, .Width = 200,
+                                        .Text = Convert.ToString(obj.GetPropertyValue("IJRtePipePathFeat", "Tag"))}
+            Me.Controls.Add(lbl8)
+            Me.Controls.Add(txtTag)
+            currentTop += spacing
+        End If
+
         Return currentTop
     End Function
 
@@ -208,6 +220,9 @@ Public Class EditPropsForm
                     End If
                     If txtSeId IsNot Nothing AndAlso Not String.IsNullOrEmpty(txtSeId.Text) Then
                         TargetObject.SetPropertyValue(txtSeId.Text, "IJSequence", "Id")
+                    End If
+                    If txtTag IsNot Nothing AndAlso Not String.IsNullOrEmpty(txtTag.Text) Then
+                        TargetObject.SetPropertyValue(txtTag.Text, "IJRtePipePathFeat", "Tag")
                     End If
                 End If
 

@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\jtb\\Downloads\\Custom Command Training\\TSTrainingCommands\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E3A110B7-5429-4B2B-A912-B53AB1FF5B65}|TSTrainingCommands\\TSTrainingCommands.vbproj|C:\\Users\\jtb\\Downloads\\Custom Command Training\\TSTrainingCommands\\tstrainingcommands\\setobjprophs.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{E3A110B7-5429-4B2B-A912-B53AB1FF5B65}|TSTrainingCommands\\TSTrainingCommands.vbproj|c:\\users\\jtb\\downloads\\custom command training\\tstrainingcommands\\tstrainingcommands\\editpropsform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{E3A110B7-5429-4B2B-A912-B53AB1FF5B65}|TSTrainingCommands\\TSTrainingCommands.vbproj|solutionrelative:tstrainingcommands\\editpropsform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3A110B7-5429-4B2B-A912-B53AB1FF5B65}|TSTrainingCommands\\TSTrainingCommands.vbproj|c:\\users\\jtb\\downloads\\custom command training\\tstrainingcommands\\tstrainingcommands\\setobjprophs.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{E3A110B7-5429-4B2B-A912-B53AB1FF5B65}|TSTrainingCommands\\TSTrainingCommands.vbproj|solutionrelative:tstrainingcommands\\setobjprophs.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3A110B7-5429-4B2B-A912-B53AB1FF5B65}|TSTrainingCommands\\TSTrainingCommands.vbproj|c:\\users\\jtb\\downloads\\custom command training\\tstrainingcommands\\tstrainingcommands\\setobjpropppl.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{E3A110B7-5429-4B2B-A912-B53AB1FF5B65}|TSTrainingCommands\\TSTrainingCommands.vbproj|C:\\Users\\jtb\\Downloads\\Custom Command Training\\TSTrainingCommands\\tstrainingcommands\\setobjpropppl.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{E3A110B7-5429-4B2B-A912-B53AB1FF5B65}|TSTrainingCommands\\TSTrainingCommands.vbproj|solutionrelative:tstrainingcommands\\setobjpropppl.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
@@ -25,19 +29,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SetObjPropPPL.vb",
-              "DocumentMoniker": "C:\\Users\\jtb\\Downloads\\Custom Command Training\\TSTrainingCommands\\TSTrainingCommands\\SetObjPropPPL.vb",
-              "RelativeDocumentMoniker": "TSTrainingCommands\\SetObjPropPPL.vb",
-              "ToolTip": "C:\\Users\\jtb\\Downloads\\Custom Command Training\\TSTrainingCommands\\TSTrainingCommands\\SetObjPropPPL.vb",
-              "RelativeToolTip": "TSTrainingCommands\\SetObjPropPPL.vb",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAvwB0AAAAhAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "EditPropsForm.vb",
+              "DocumentMoniker": "C:\\Users\\jtb\\Downloads\\Custom Command Training\\TSTrainingCommands\\TSTrainingCommands\\EditPropsForm.vb",
+              "RelativeDocumentMoniker": "TSTrainingCommands\\EditPropsForm.vb",
+              "ToolTip": "C:\\Users\\jtb\\Downloads\\Custom Command Training\\TSTrainingCommands\\TSTrainingCommands\\EditPropsForm.vb",
+              "RelativeToolTip": "TSTrainingCommands\\EditPropsForm.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-08-07T03:18:24.525Z",
+              "WhenOpened": "2025-08-13T06:47:28.942Z",
               "EditorCaption": ""
             },
             {
@@ -46,7 +50,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "SetObjPropPPL.vb",
+              "DocumentMoniker": "C:\\Users\\jtb\\Downloads\\Custom Command Training\\TSTrainingCommands\\TSTrainingCommands\\SetObjPropPPL.vb",
+              "RelativeDocumentMoniker": "TSTrainingCommands\\SetObjPropPPL.vb",
+              "ToolTip": "C:\\Users\\jtb\\Downloads\\Custom Command Training\\TSTrainingCommands\\TSTrainingCommands\\SetObjPropPPL.vb",
+              "RelativeToolTip": "TSTrainingCommands\\SetObjPropPPL.vb",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAvwB0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-08-07T03:18:24.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "SetObjPropHS.vb",
               "DocumentMoniker": "C:\\Users\\jtb\\Downloads\\Custom Command Training\\TSTrainingCommands\\TSTrainingCommands\\SetObjPropHS.vb",
               "RelativeDocumentMoniker": "TSTrainingCommands\\SetObjPropHS.vb",
@@ -59,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "TSTrainingCommands",
               "DocumentMoniker": "C:\\Users\\jtb\\Downloads\\Custom Command Training\\TSTrainingCommands\\TSTrainingCommands\\TSTrainingCommands.vbproj",
               "RelativeDocumentMoniker": "TSTrainingCommands\\TSTrainingCommands.vbproj",
@@ -70,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SetObjPropCmd.vb",
               "DocumentMoniker": "C:\\Users\\jtb\\Downloads\\Custom Command Training\\TSTrainingCommands\\TSTrainingCommands\\SetObjPropCmd.vb",
               "RelativeDocumentMoniker": "TSTrainingCommands\\SetObjPropCmd.vb",
@@ -78,8 +94,7 @@
               "RelativeToolTip": "TSTrainingCommands\\SetObjPropCmd.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAnwAsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-02-26T02:38:11.372Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T02:38:11.372Z"
             }
           ]
         }
