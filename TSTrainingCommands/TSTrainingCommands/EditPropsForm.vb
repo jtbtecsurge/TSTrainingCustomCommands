@@ -94,7 +94,7 @@ Public Class EditPropsForm
 
         ' Sequence Number
         If PropertyExists(obj, "IJPipelineSystem", "SequenceNumber") Then
-            Dim lbl3 As New Label With {.Text = "Seq Number:", .Top = currentTop, .Left = 0}
+            Dim lbl3 As New Label With {.Text = "Sequence Number:", .Top = currentTop, .Left = 0}
             txtSqnm = New TextBox With {.Top = currentTop, .Left = 100, .Width = 200,
                                         .Text = Convert.ToString(obj.GetPropertyValue("IJPipelineSystem", "SequenceNumber"))}
             Me.Controls.Add(lbl3)
