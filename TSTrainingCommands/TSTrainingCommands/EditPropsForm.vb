@@ -35,11 +35,27 @@ Public Class EditPropsForm
         currentTop = AvailableProperty(obj, currentTop, spacing)
         currentTop = ButtonApply(obj, currentTop, spacing)
 
-        'Me.Icon = New Icon("C:\Users\s3d\Downloads\document.ico")
+        ChangeLightAccentColor()
+        Me.Icon = New Icon("C:\Users\s3d\Downloads\document.ico")
         Me.Text = "Edit Properties"
         Me.Width = 325
         Me.Height = 75 + currentTop
         Me.StartPosition = FormStartPosition.CenterScreen
+    End Sub
+
+    Private Sub ChangeLightAccentColor()
+        Dim rnd As New Random
+
+        Dim r As Integer = rnd.Next(180, 256)
+        Dim g As Integer = rnd.Next(180, 256)
+        Dim b As Integer = rnd.Next(180, 256)
+
+        Dim randomLightColor As Color = Color.FromArgb(r, g, b)
+        Me.BackColor = randomLightColor
+
+        For Each ctrl As Control In Me.Controls
+            ctrl.BackColor = randomLightColor
+        Next
     End Sub
 
     ' Method for Button Apply 
