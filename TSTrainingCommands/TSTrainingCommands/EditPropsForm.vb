@@ -19,6 +19,8 @@ Public Class EditPropsForm
     Private txtEDes As TextBox
     Private txtSeId As TextBox
     Private txtTag As TextBox
+    Private txtCDes As TextBox
+    Private txtISNo As TextBox
 
     ' This code creates the form and gathers data/input from the user
     Public Sub New(obj As BusinessObject)
@@ -68,7 +70,9 @@ Public Class EditPropsForm
             ("IJEquipment", "Description"),
             ("IJPipelineSystem", "SequenceNumber"),
             ("IJSequence", "Id"),
-            ("IJRtePipePathFeat", "Tag")
+            ("IJRtePipePathFeat", "Tag"),
+            ("ISPGCoordinateSystemProperties", "Description"),
+            ("IJRtePipePart", "IsoSheetNo")
              }.Any(Function(p) PropertyExists(obj, p.Item1, p.Item2)) Then
             Dim btnApply As New Button With {.Text = "Apply", .Top = currentTop, .Left = 120}
             AddHandler btnApply.Click, AddressOf ApplyChanges
@@ -178,6 +182,26 @@ Public Class EditPropsForm
                                         .Text = Convert.ToString(obj.GetPropertyValue("IJRtePipePathFeat", "Tag"))}
             Me.Controls.Add(lbl8)
             Me.Controls.Add(txtTag)
+            currentTop += spacing
+        End If
+
+        ' Coordinates Description
+        If PropertyExists(obj, "ISPGCoordinateSystemProperties", "Description") Then
+            Dim lbl9 As New Label With {.Text = "Description:", .Top = currentTop, .Left = 0}
+            txtCDes = New TextBox With {.Top = currentTop, .Left = 100, .Width = 200,
+                                        .Text = Convert.ToString(obj.GetPropertyValue("ISPGCoordinateSystemProperties", "Description"))}
+            Me.Controls.Add(lbl9)
+            Me.Controls.Add(txtCDes)
+            currentTop += spacing
+        End If
+
+        ' Isometric Sheet Number
+        If PropertyExists(obj, "IJRtePipePart", "IsoSheetNo") Then
+            Dim lbl10 As New Label With {.Text = "Iso Sheet No:", .Top = currentTop, .Left = 0}
+            txtISNo = New TextBox With {.Top = currentTop, .Left = 100, .Width = 200,
+                                        .Text = Convert.ToString(obj.GetPropertyValue("IJRtePipePart", "IsoSheetNo"))}
+            Me.Controls.Add(lbl10)
+            Me.Controls.Add(txtISNo)
             currentTop += spacing
         End If
 
