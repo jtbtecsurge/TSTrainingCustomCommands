@@ -264,6 +264,12 @@ Public Class EditPropsForm
                     If txtTag IsNot Nothing AndAlso Not String.IsNullOrEmpty(txtTag.Text) Then
                         TargetObject.SetPropertyValue(txtTag.Text, "IJRtePipePathFeat", "Tag")
                     End If
+                    If txtCDes IsNot Nothing AndAlso Not String.IsNullOrEmpty(txtCDes.Text) Then
+                        TargetObject.SetPropertyValue(txtCDes.Text, "ISPGCoordinateSystemProperties", "Description")
+                    End If
+                    If txtISNo IsNot Nothing AndAlso Not String.IsNullOrEmpty(txtISNo.Text) Then
+                        TargetObject.SetPropertyValue(txtISNo.Text, "IJRtePipePart", "IsoSheetNo")
+                    End If
                 End If
 
             Next
