@@ -21,6 +21,8 @@ Public Class EditPropsForm
     Private txtTag As TextBox
     Private txtCDes As TextBox
     Private txtISNo As TextBox
+    Private txtSDes As TextBox
+    Private txtTDes As TextBox
 
     ' This code creates the form and gathers data/input from the user
     Public Sub New(obj As BusinessObject)
@@ -72,7 +74,9 @@ Public Class EditPropsForm
             ("IJSequence", "Id"),
             ("IJRtePipePathFeat", "Tag"),
             ("ISPGCoordinateSystemProperties", "Description"),
-            ("IJRtePipePart", "IsoSheetNo")
+            ("IJRtePipePart", "IsoSheetNo"),
+            ("IJSmartInteropCommonAttribute", "Description"),
+            ("ISIOTag", "TagTypeDescription")
              }.Any(Function(p) PropertyExists(obj, p.Item1, p.Item2)) Then
             Dim btnApply As New Button With {.Text = "Apply", .Top = currentTop, .Left = 120}
             AddHandler btnApply.Click, AddressOf ApplyChanges
@@ -205,6 +209,25 @@ Public Class EditPropsForm
             currentTop += spacing
         End If
 
+        ' Smart Interop Description
+        If PropertyExists(obj, "IJSmartInteropCommonAttribute", "Description") Then
+            Dim lbl11 As New Label With {.Text = "Description:", .Top = currentTop, .Left = 0}
+            txtSDes = New TextBox With {.Top = currentTop, .Left = 100, .Width = 200,
+                                        .Text = Convert.ToString(obj.GetPropertyValue("IJSmartInteropCommonAttribute", "Description"))}
+            Me.Controls.Add(lbl11)
+            Me.Controls.Add(txtSDes)
+            currentTop += spacing
+        End If
+
+        ' Tag Type Description
+        If PropertyExists(obj, "ISIOTag", "TagTypeDescription") Then
+            Dim lbl12 As New Label With {.Text = "Tag Type Description:", .Top = currentTop, .Left = 0}
+            txtTDes = New TextBox With {.Top = currentTop, .Left = 100, .Width = 200,
+                                        .Text = Convert.ToString(obj.GetPropertyValue("ISIOTag", "TagTypeDescription"))}
+            Me.Controls.Add(lbl12)
+            Me.Controls.Add(txtTDes)
+            currentTop += spacing
+        End If
         Return currentTop
     End Function
 
@@ -269,6 +292,12 @@ Public Class EditPropsForm
                     End If
                     If txtISNo IsNot Nothing AndAlso Not String.IsNullOrEmpty(txtISNo.Text) Then
                         TargetObject.SetPropertyValue(txtISNo.Text, "IJRtePipePart", "IsoSheetNo")
+                    End If
+                    If txtSDes IsNot Nothing AndAlso Not String.IsNullOrEmpty(txtSDes.Text) Then
+                        TargetObject.SetPropertyValue(txtSDes.Text, "IJSmartInteropCommonAttribute", "Description")
+                    End If
+                    If txtTDes IsNot Nothing AndAlso Not String.IsNullOrEmpty(txtTDes.Text) Then
+                        TargetObject.SetPropertyValue(txtTDes.Text, "ISIOTag", "TagTypeDescription")
                     End If
                 End If
 
