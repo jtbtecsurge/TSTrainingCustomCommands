@@ -23,6 +23,11 @@ Public Class EditPropsForm
     Private txtISNo As TextBox
     Private txtSDes As TextBox
     Private txtTDes As TextBox
+    Private txtUmdt As TextBox
+    Private txtAsMa As TextBox
+    Private txtPiMa As TextBox
+    Private txtStCo As TextBox
+    Private txtWoCe As TextBox
 
     ' This code creates the form and gathers data/input from the user
     Public Sub New(obj As BusinessObject)
@@ -76,7 +81,12 @@ Public Class EditPropsForm
             ("ISPGCoordinateSystemProperties", "Description"),
             ("IJRtePipePart", "IsoSheetNo"),
             ("IJSmartInteropCommonAttribute", "Description"),
-            ("ISIOTag", "TagTypeDescription")
+            ("ISIOTag", "TagTypeDescription"),
+            ("IJSmartInteropUnmappedData", "UnmappedData"),
+            ("ISIOStructDetailingProps", "AssemblyMark"),
+            ("ISIOStructDetailingProps", "PieceMark"),
+            ("ISIOStructState", "StageCode"),
+            ("ISIOStructuralPart", "WorkCenter")
              }.Any(Function(p) PropertyExists(obj, p.Item1, p.Item2)) Then
             Dim btnApply As New Button With {.Text = "Apply", .Top = currentTop, .Left = 120}
             AddHandler btnApply.Click, AddressOf ApplyChanges
@@ -228,6 +238,57 @@ Public Class EditPropsForm
             Me.Controls.Add(txtTDes)
             currentTop += spacing
         End If
+
+        ' Unmapped Data
+        If PropertyExists(obj, "IJSmartInteropUnmappedData", "UnmappedData") Then
+            Dim lbl13 As New Label With {.Text = "Unmapped Data:", .Top = currentTop, .Left = 0}
+            txtUmdt = New TextBox With {.Top = currentTop, .Left = 100, .Width = 200,
+                                        .Text = Convert.ToString(obj.GetPropertyValue("IJSmartInteropUnmappedData", "UnmappedData"))}
+            Me.Controls.Add(lbl13)
+            Me.Controls.Add(txtUmdt)
+            currentTop += spacing
+        End If
+
+        ' Assembly Mark
+        If PropertyExists(obj, "ISIOStructDetailingProps", "AssemblyMark") Then
+            Dim lbl14 As New Label With {.Text = "Assembly Mark:", .Top = currentTop, .Left = 0}
+            txtAsMa = New TextBox With {.Top = currentTop, .Left = 100, .Width = 200,
+                                        .Text = Convert.ToString(obj.GetPropertyValue("ISIOStructDetailingProps", "AssemblyMark"))}
+            Me.Controls.Add(lbl14)
+            Me.Controls.Add(txtAsMa)
+            currentTop += spacing
+        End If
+
+        ' Piece Mark
+        If PropertyExists(obj, "ISIOStructDetailingProps", "PieceMark") Then
+            Dim lbl15 As New Label With {.Text = "Piece Mark:", .Top = currentTop, .Left = 0}
+            txtPiMa = New TextBox With {.Top = currentTop, .Left = 100, .Width = 200,
+                                        .Text = Convert.ToString(obj.GetPropertyValue("ISIOStructDetailingProps", "PieceMark"))}
+            Me.Controls.Add(lbl15)
+            Me.Controls.Add(txtPiMa)
+            currentTop += spacing
+        End If
+
+        ' Stage Code
+        If PropertyExists(obj, "ISIOStructState", "StageCode") Then
+            Dim lbl16 As New Label With {.Text = "Stage Code:", .Top = currentTop, .Left = 0}
+            txtStCo = New TextBox With {.Top = currentTop, .Left = 100, .Width = 200,
+                                        .Text = Convert.ToString(obj.GetPropertyValue("ISIOStructState", "StageCode"))}
+            Me.Controls.Add(lbl16)
+            Me.Controls.Add(txtStCo)
+            currentTop += spacing
+        End If
+
+        ' Work Center
+        If PropertyExists(obj, "ISIOStructuralPart", "WorkCenter") Then
+            Dim lbl17 As New Label With {.Text = "Work Center:", .Top = currentTop, .Left = 0}
+            txtWoCe = New TextBox With {.Top = currentTop, .Left = 100, .Width = 200,
+                                        .Text = Convert.ToString(obj.GetPropertyValue("ISIOStructuralPart", "WorkCenter"))}
+            Me.Controls.Add(lbl17)
+            Me.Controls.Add(txtWoCe)
+            currentTop += spacing
+        End If
+
         Return currentTop
     End Function
 
@@ -298,6 +359,21 @@ Public Class EditPropsForm
                     End If
                     If txtTDes IsNot Nothing AndAlso Not String.IsNullOrEmpty(txtTDes.Text) Then
                         TargetObject.SetPropertyValue(txtTDes.Text, "ISIOTag", "TagTypeDescription")
+                    End If
+                    If txtUmdt IsNot Nothing AndAlso Not String.IsNullOrEmpty(txtUmdt.Text) Then
+                        TargetObject.SetPropertyValue(txtUmdt.Text, "IJSmartInteropUnmappedData", "UnmappedData")
+                    End If
+                    If txtAsMa IsNot Nothing AndAlso Not String.IsNullOrEmpty(txtAsMa.Text) Then
+                        TargetObject.SetPropertyValue(txtAsMa.Text, "ISIOStructDetailingProps", "AssemblyMark")
+                    End If
+                    If txtPiMa IsNot Nothing AndAlso Not String.IsNullOrEmpty(txtPiMa.Text) Then
+                        TargetObject.SetPropertyValue(txtPiMa.Text, "ISIOStructDetailingProps", "PieceMark")
+                    End If
+                    If txtStCo IsNot Nothing AndAlso Not String.IsNullOrEmpty(txtStCo.Text) Then
+                        TargetObject.SetPropertyValue(txtStCo.Text, "ISIOStructState", "StageCode")
+                    End If
+                    If txtWoCe IsNot Nothing AndAlso Not String.IsNullOrEmpty(txtWoCe.Text) Then
+                        TargetObject.SetPropertyValue(txtWoCe.Text, "ISIOStructuralPart", "WorkCenter")
                     End If
                 End If
 
